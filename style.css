@@ -1,0 +1,226 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HankenGrotesk;
+}
+
+body{
+    padding: 5rem 1rem;
+}
+
+.wrapper{
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px hsl(221, 100%, 96%);
+}
+
+.result{
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+
+.result h2{
+    font-size: 22px;
+    color: hsl(0, 0%, 100%, 0.74);
+    margin: 30px;
+    font-weight: 700;
+}
+
+.result .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0));
+}
+
+.result .circle .number{
+    font-size: 65px;
+    font-weight: 70px;
+    margin-top: 40px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.result .circle span{
+    text-align: center;
+    color: hsl(0, 0%, 100%, 0.400);
+    font-size: 18px;
+    display: block;
+}
+
+.result .great{
+    font-size: 22px;
+    margin: 15px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.result p{
+    font-size: 18px;
+    color: hsl(0, 0%, 100%, 0.400);
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+.value{
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.value h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.red{
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.050);
+}
+
+.yellow{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.050);
+}
+
+.green{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.050);
+}
+
+.blue{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.050);
+}
+
+.value .box{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 15px;
+    margin: 18px 0;
+    border-radius: 10px;
+}
+
+.value img{
+    height: 18px;
+    margin-right: 10px;
+}
+
+.value p{
+    flex-grow: 2;
+}
+
+.value .number{
+    font-weight: 800;
+    color: black;
+}
+
+.value span{
+    color: rgba(0, 0, 0, 0.485);
+    font-weight: 700;
+}
+
+.value button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    background: hsl(224, 30%, 27%);
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.value button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+}
+
+@media(max-width: 400px){
+    .wrapper{
+        flex-direction: column;
+        width: 100vw;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .result{
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .result h2{
+        font-size: 18px;
+        margin: 15px 0;
+        font-weight: 500;
+    }
+
+    .result .circle{
+        width: 140px;
+        height: 140px;
+    }
+
+    .result .circle .number{
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .result .circle span{
+        font-size: 15px;
+    }
+
+    .result .great{
+        font-size: 18px;
+    }
+    
+    .result p{
+        font-size: 15px;
+    }
+
+    .value{
+        width: 100%;
+    }
+
+    .value h2{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .value a{
+        height: 60px;
+    }
+}
+.attribution{ 
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
